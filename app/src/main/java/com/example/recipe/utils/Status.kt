@@ -2,6 +2,7 @@ package com.example.recipe.utils
 
 enum class Status {
     SUCCESS,
-    ERROR,
-    LOADING
+    RUNNING,
+    FAILED,
+    NOT_FOUND
 }

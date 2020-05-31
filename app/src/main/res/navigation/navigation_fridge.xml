@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_fridge"
+    app:startDestination="@id/fridge">
+
+    <fragment
+        android:id="@+id/fridge"
+        android:name="com.example.recipe.ui.fridge.FridgeFragment"
+        android:label="Fridge">
+        <action
+            android:id="@+id/action_fridge_to_choice"
+            app:destination="@id/nav_choice" />
+    </fragment>
+
+    <include app:graph="@navigation/navigation_choice" />
+
+</navigation>

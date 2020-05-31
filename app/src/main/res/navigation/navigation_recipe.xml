@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_recipe"
+    app:startDestination="@id/recipe">
+
+    <fragment
+        android:id="@+id/recipe"
+        android:name="com.example.recipe.ui.recipe.RecipeFragment"
+        android:label="Recipe">
+        <action
+            android:id="@+id/action_recipe_to_detail"
+            app:destination="@id/recipe_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipe_detail"
+        android:name="com.example.recipe.ui.recipe.RecipeDetailFragment"
+        android:label="Recipe detail">
+        <action
+            android:id="@+id/action_detail_to_recipe_list"
+            app:destination="@id/recipe"
+            app:popUpTo="@id/recipe"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

@@ -1,9 +1,20 @@
 <resources>
     <string name="app_name">Recipe</string>
-    <string name="cals_param">Calories: %1$s</string>
-    <string name="carbs_param">Carbs: %1$s</string>
-    <string name="fat_param">Fat: %1$s</string>
-    <string name="protein_param">Protein: %1$s</string>
-    <string name="food_name">Food name</string>
-    <string name="content_food_icon">Food icon</string>
+    <string name="new_product">New product:</string>
+    <string name="product_name">Product name</string>
+    <string name="calories">Calories</string>
+    <string name="carbs">Carbs</string>
+    <string name="fat">Fat</string>
+    <string name="protein">Protein</string>
+    <string name="grams">Grams</string>
+    <string name="add">Add</string>
+    <string name="choice">Choice</string>
+    <string name="new_string">New</string>
+    <string name="browse_recipe">Browse recipe</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="message_submit_data">Please submit your data:</string>
+    <string name="hint_weight">Weight in kg.</string>
+    <string name="hint_height">Height in cm.</string>
+    <string name="hint_age">Age</string>
+    <string name="save">Save</string>
 </resources>

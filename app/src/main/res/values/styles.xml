@@ -1,11 +1,135 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorText</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPink</item>
+        <item name="colorPrimaryDark">@color/colorPink</item>
+        <item name="colorAccent">@color/colorPink</item>
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
+
+    <style name="Regular" parent="android:TextAppearance">
+        <item name="fontFamily">@font/sourcesanspro_regular</item>
+    </style>
+
+    <style name="SemiBold" parent="android:TextAppearance">
+        <item name="fontFamily">@font/sourcesanspro_semibold</item>
+    </style>
+
+    <style name="Light" parent="android:TextAppearance">
+        <item name="fontFamily">@font/sourcesanspro_lightlt</item>
+    </style>
+
+    <style name="Text14RegDark">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textAppearance">@style/Regular</item>
+    </style>
+
+    <style name="Text14RegGrey">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/colorTextGrey</item>
+        <item name="android:textAppearance">@style/Regular</item>
+    </style>
+
+    <style name="Text44SemiDark">
+        <item name="android:textSize">@dimen/h0</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textAppearance">@style/SemiBold</item>
+    </style>
+
+    <style name="Text32SemiDark">
+        <item name="android:textSize">@dimen/h0_5</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textAppearance">@style/SemiBold</item>
+    </style>
+
+    <style name="Text22SemiWhite">
+        <item name="android:textSize">@dimen/h1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">@style/SemiBold</item>
+    </style>
+
+    <style name="Text22SemiDark">
+        <item name="android:textSize">@dimen/h1</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textAppearance">@style/SemiBold</item>
+    </style>
+
+    <style name="Text14SemiDark">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textAppearance">@style/SemiBold</item>
+    </style>
+
+    <style name="Text14It">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/colorTextDark</item>
+        <item name="android:textAppearance">@style/Light</item>
+    </style>
+
+    <style name="Text14ItGrey">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/colorTextGrey</item>
+        <item name="android:textAppearance">@style/Light</item>
+    </style>
+
+    <style name="Text18RegPink">
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:textColor">@color/colorPink</item>
+        <item name="android:textAppearance">@style/Regular</item>
+    </style>
+
+    <style name="Text18ItGrey">
+        <item name="android:textSize">@dimen/h2</item>
+        <item name="android:textColor">@color/colorTextGrey</item>
+        <item name="android:textAppearance">@style/Light</item>
+    </style>
+
+    <style name="Text14RegPink">
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/colorPink</item>
+        <item name="android:textAppearance">@style/Regular</item>
+    </style>
+
+    <style name="ListImage">
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="ButtonBig" parent="RadiusButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="ButtonOkFood" parent="RadiusButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="RadiusButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorPink</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textColor">@color/colorPink</item>
+    </style>
+
+    <style name="IconButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="android:minHeight">32dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

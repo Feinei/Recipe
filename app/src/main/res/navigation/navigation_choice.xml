@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_choice"
+    app:startDestination="@id/choice">
+
+    <fragment
+        android:id="@+id/choice"
+        android:name="com.example.recipe.ui.general.ChoiceFoodFragment"
+        android:label="Choice food">
+        <action
+            android:id="@+id/action_choice_to_food_list"
+            app:destination="@id/food_list" />
+        <action
+            android:id="@+id/action_choice_to_new_food"
+            app:destination="@id/new_food" />
+        <action
+            android:id="@+id/action_choice_to_fridge"
+            app:destination="@id/fridge"
+            app:popUpTo="@id/fridge"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_choice_to_cals"
+            app:destination="@id/cals"
+            app:popUpTo="@id/cals"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/food_list"
+        android:name="com.example.recipe.ui.food.FoodListFragment"
+        android:label="Food list">
+        <action
+            android:id="@+id/action_food_list_to_fridge"
+            app:destination="@id/fridge"
+            app:popUpTo="@id/fridge"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_food_list_to_cals"
+            app:destination="@id/cals"
+            app:popUpTo="@id/cals"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/new_food"
+        android:name="com.example.recipe.ui.general.AddNewFoodFragment"
+        android:label="New food">
+        <action
+            android:id="@+id/action_new_food_to_fridge"
+            app:destination="@id/fridge"
+            app:popUpTo="@id/fridge"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_new_food_to_cals"
+            app:destination="@id/cals"
+            app:popUpTo="@id/cals"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

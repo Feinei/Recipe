@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="recipeListViewModel"
+            type="com.example.recipe.ui.recipe.RecipeViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:recycler_data="@{recipeListViewModel.recipes}"
+            app:rv_visibility="@{recipeListViewModel.progress}"
+            tools:listitem="@layout/item_food" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorColor="@color/colorPink"
+            app:indicatorName="PacmanIndicator"
+            app:layout_constraintBottom_toBottomOf="@id/rv_recipe"
+            app:layout_constraintEnd_toEndOf="@id/rv_recipe"
+            app:layout_constraintStart_toStartOf="@id/rv_recipe"
+            app:layout_constraintTop_toTopOf="@id/rv_recipe"
+            app:progress_visibility="@{recipeListViewModel.progress}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_calories"
+    app:startDestination="@id/cals">
+
+    <fragment
+        android:id="@+id/cals"
+        android:name="com.example.recipe.ui.cals.CaloriesFragment"
+        android:label="Calories">
+        <action
+            android:id="@+id/action_cals_to_choice"
+            app:destination="@id/nav_choice" />
+        <action
+            android:id="@+id/action_cals_to_user_data"
+            app:destination="@id/user_data" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/user_data"
+        android:name="com.example.recipe.ui.cals.UserDataFragment"
+        android:label="User Data">
+        <action
+            android:id="@+id/action_user_data_to_cals"
+            app:destination="@id/cals"
+            app:popUpTo="@id/cals"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <include app:graph="@navigation/navigation_choice" />
+
+</navigation>

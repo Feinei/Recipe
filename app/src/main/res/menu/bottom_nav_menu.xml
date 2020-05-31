@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.recipe.ui.MainActivity">
 
     <item
-        android:id="@+id/nav_cal"
-        android:title="Callories" />
-
-    <item
-        android:id="@+id/nav_fridge"
+        android:id="@+id/navigation_fridge"
+        android:icon="@drawable/ic_fridge"
         android:title="Fridge" />
 
     <item
-        android:id="@+id/nav_recipe"
-        android:title="Recipe" />
+        android:id="@+id/navigation_cals"
+        android:icon="@drawable/ic_fork"
+        android:title="Calories" />
+
+    <item
+        android:id="@+id/navigation_recipe"
+        android:icon="@drawable/ic_chef"
+        android:title="Recipes" />
 
 </menu>

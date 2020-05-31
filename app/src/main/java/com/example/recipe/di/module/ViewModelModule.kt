@@ -10,13 +10,10 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 
 @Module
-abstract class ViewModelModule {
+interface ViewModelModule {
 
     @Binds
-    @IntoMap
-    @ViewModelKey(FoodListViewModel::class)
-    abstract fun bindMainViewModel(viewModel: FoodListViewModel): ViewModel
-
-    @Binds
-    abstract fun bindViewModelFactory(factory: ViewModelFactory): ViewModelProvider.Factory
+    fun bindViewModelFactory(
+        factory: ViewModelFactory
+    ): ViewModelProvider.Factory
 }
